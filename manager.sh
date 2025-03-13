@@ -1,5 +1,6 @@
 #!/bin/bash -eu
 set -o pipefail
+shopt -s globstar nullglob
 
 if [[ -n ${1+x} ]]; then
 	echo "$1" > /tmp/mod.url
@@ -18,7 +19,6 @@ enabled=$config/enabled.csv
 mods=$config/mods
 tmp=$config/tmp
 nexus_game=skyrimspecialedition
-rm -rf "$tmp"
 mkdir -p "$config" "$mods" "$tmp"
 touch "$enabled"
 echo 0 > "$config/version"
@@ -110,10 +110,16 @@ main_menu() {
 	) || true
 	case $action in
 		patches)
-			configure '^02'
+			configure '^01'
 			;;
 		audio)
 			configure '^1'
+			;;
+		texture_packs)
+			configure '^2'
+			;;
+		content)
+			configure '^3'
 			;;
 		install)
 			install
@@ -125,7 +131,7 @@ main_menu() {
 			revert
 			;;
 		play)
-			steam steam://rungameid/489830
+			exec steam steam://rungameid/489830
 			;;
 		*)
 			exit 0
@@ -134,7 +140,7 @@ main_menu() {
 }
 
 configure() {
-	local cmd unselected_ids=() first_time=1 line id mod_name download link selected_ids unselected_ids dependants=() dependant_id
+	local cmd unselected_ids=() first_time=1 line id default mod_name download link selected_ids unselected_ids dependants=() dependant_id
 	cmd=(zenity --title="Select mods" --height=512 --width=896 --list --checklist --column= --column= --column= --column= --hide-column=2 --editable --separator=" ")
 	# All mods in this category.
 	# Remember which mods the user selected.
@@ -143,14 +149,18 @@ configure() {
 	fi
 	# Read all mods in this category.
 	while read -r line; do
+		default=$(cut -d, -f2 <<< "$line")
+		if [[ $default = 2 ]]; then
+			continue
+		fi
 		id=$(cut -d, -f1 <<< "$line")
 		unselected_ids+=("$id")
-		mod_name=$(cut -d, -f2 <<< "$line")
-		download=$(cut -d, -f4 <<< "$line")
+		mod_name=$(cut -d, -f3 <<< "$line")
+		download=$(cut -d, -f5 <<< "$line")
 		if [[ $download != http* ]]; then
 			link=https://www.nexusmods.com/$nexus_game/mods/$(cut -d: -f1 <<< "$download")
 		fi
-		if [[ $first_time = 1 ]] || grep "^$id" "$enabled" > /dev/null; then
+		if [[ $first_time = 1 && $default = 1 ]] || grep "^$id" "$enabled" > /dev/null; then
 			cmd+=(TRUE)
 		else
 			cmd+=(FALSE)
@@ -161,8 +171,9 @@ configure() {
 	selected_ids=$("${cmd[@]}") || return 0
 
 	# Create new enabled mod list.
-	grep -vE "$1|^9" "$enabled" > "$enabled.new"
+	grep -vE "$1|^9" "$enabled" > "$enabled.new" || true
 	# Enable and download selected mods and dependencies.
+	download_queue=()
 	for id in $selected_ids; do
 		download "$id"
 		remove "$id" "${unselected_ids[@]}"
@@ -175,12 +186,12 @@ configure() {
 			if ! grep "^$dependant_id" "$enabled" > /dev/null; then
 				continue
 			fi
-			mod_name=$(cut -d, -f2 <<< "$line")
+			mod_name=$(cut -d, -f3 <<< "$line")
 			if ! contains "$mod_name" "${dependants[@]}"; then
 				dependants+=("$mod_name")
 			fi
 			sed -i "/$dependant_id/ d" "$enabled.new"
-		done < <(grep "\<$id\>" "$mod_list" | grep -v "^$id")
+		done < <(awk -F, "\$6 ~ /$id/" "$mod_list")
 	done
 	download_patches
 	if [[ ${#dependants[@]} != 0 ]]; then
@@ -194,19 +205,25 @@ configure() {
 
 download() {
 	local dependencies dependency download nxm_link
-	IFS=";" read -ra dependencies < <(grep "^$1" "$mod_list" | cut -d, -f5)
+	# Prevent cyclic dependencies recursing endlessly.
+	if contains "$1" "${download_queue[@]}"; then
+		return 0
+	fi
+	download_queue+=("$1")
+	IFS=":" read -ra dependencies < <(grep "^$1" "$mod_list" | cut -d, -f6)
 	for dependency in "${dependencies[@]}"; do
 		download "$dependency"
 	done
 
-	if [[ -d $(get_mod_dir "$1") ]]; then
+	download=$(grep "^$1" "$mod_list" | cut -d, -f5)
+	if [[ -d $(get_mod_dir "$1") ]] || ! grep : <<< "$download" > /dev/null; then
 		enable_mod "$1"
 		return
 	else
 		# Remove old versions
-		find "$mods" -maxdepth 1 -name "$1*" -exec rm -rf {} +
+		mkdir -p "$config/old"
+		find "$mods" -maxdepth 1 -name "$1*" -exec mv {} "$config/old" ';'
 	fi
-	download=$(grep "^$1" $mod_list | cut -d, -f4)
 	if [[ $download = http* ]]; then
 		extract "$1" "$download"
 	else
@@ -227,8 +244,8 @@ download() {
 
 get_mod_dir() {
 	local name version
-	name=$(grep "^$1" "$mod_list" | cut -d, -f2)
-	version=$(grep "^$1" "$mod_list" | cut -d, -f3)
+	name=$(grep "^$1" "$mod_list" | cut -d, -f3)
+	version=$(grep "^$1" "$mod_list" | cut -d, -f4)
 	echo "$mods/$1 $name $version"
 }
 
@@ -241,7 +258,7 @@ enable_mod() {
 download_patches() {
 	local line
 	while read -r line; do
-		IFS=";" read -ra dependencies < <(cut -d, -f5 <<< "$line")
+		IFS=":" read -ra dependencies < <(cut -d, -f6 <<< "$line")
 		for dependency in "${dependencies[@]}"; do
 			if ! grep "^$dependency" "$enabled.new" > /dev/null; then
 				continue 2
@@ -254,7 +271,7 @@ download_patches() {
 
 extract() {
 	local mod_data
-	curl "${2// /%20}" > "$tmp/$1"
+	wget -c -O "$tmp/$1" "$2"
 	# Unfortunately, 7z cannot extract from stdin
 	mod_data=$(get_mod_dir "$1")
 	7z x "$tmp/$1" -o"$mod_data"
@@ -271,10 +288,44 @@ handle_nxm_link() {
 }
 
 clean_mod_data() {
+	local dir bad_name
 	pushd "$1" > /dev/null
-	rm -rf BashTags
+	if [[ $(ls | wc -l) = 1 && -n $(echo */{00*,fomod,*.{bsa,esp},{m,M}eshes,{m,M}usic,{s,S}cripts,skse,SKSE,{s,S}ound,{t,T}extures}) ]]; then
+		dir=$(echo *)
+		mv -- */* .
+		rmdir "$dir"
+	fi
+	for dir in [0-9]*/; do
+		clean_mod_data "$dir"
+	done
+	if [[ -d data ]]; then
+		mv data Data
+	fi
+	if [[ -d Data ]]; then
+		mv Data/* .
+		rmdir Data
+	fi
+	mv FOMod fomod 2> /dev/null || true
 	mv meshes Meshes 2> /dev/null || true
+	mv music Music 2> /dev/null || true
+	mv scripts Scripts 2> /dev/null || true
+	mv skse SKSE 2> /dev/null || true
+	mv SKSE/{plugins,Plugins} 2> /dev/null || true
+	mv sound Sound 2> /dev/null || true
 	mv textures Textures 2> /dev/null || true
+	for dir in Meshes Textures; do
+		pushd "$dir" &> /dev/null || continue
+		while true; do
+			for bad_name in **/*[A-Z]*/; do
+				# Convert to lowercase
+				mv "$bad_name" "${bad_name,,}"
+				continue 2
+			done
+			break
+		done
+		popd > /dev/null
+	done
+	rm -rf BashTags {,Plugins/,Scripts/}{Source,source,src}
 	popd > /dev/null
 }
 
@@ -287,21 +338,22 @@ install() {
 	fi
 
 	while read -r id; do
-		name=$(grep "^$id" $mod_list | cut -d, -f2)
+		name=$(grep "^$id" $mod_list | cut -d, -f3)
 		echo "Installing $id $name"
 		mod_data=$(get_mod_dir "$id")
+		if [[ ! -d $mod_data ]]; then continue; fi
 		game_data="$game_dir/Data"
 		if [[ -f installers/$id.sh ]]; then
 			installer=$(cat "installers/$id.sh")
 			pushd "$mod_data" > /dev/null
 			eval "$installer"
 			popd > /dev/null
+		elif [[ -n $(echo "$mod_data"/00*) ]]; then
+			cp -al "$mod_data"/00*/* "$game_data"
 		else
 			cp -al "$mod_data"/* "$game_data"
 		fi
 	done < <(sort "$enabled")
-
-	rm -rf "$game_data"/fomod
 
 	mod_count=$(wc -l < "$enabled")
 	zenity --title=Success --text="Installed $mod_count mods." --info
