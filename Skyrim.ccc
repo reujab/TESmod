@@ -75,83 +75,132 @@ ccAFDSSE001-DweSanctuary.esm
 _ResourcePack.esl
 
 unofficial skyrim special edition patch.esp
-FISS.esp
-LegacyoftheDragonborn.esm
-3DNPC.esp
-RealisticWaterTwo - Resources.esm
-Falskaar.esm
 UHDAP - MusicHQ.esp
+LegacyoftheDragonborn.esm
+JK's Blue Palace.esp
+JKs The Drunken Huntsman.esp
 SkyUI_SE.esp
-Audio Overhaul Skyrim.esp
 SMIM-SE-Merged-All.esp
+Audio Overhaul Skyrim.esp
 Immersive Sounds - Compendium.esp
 AOS_ISC_Integration.esp
-Book Covers Skyrim.esp
-JKs Skyrim.esp
-AI Overhaul.esp
-Skyrim Immersive Creatures Special Edition.esp
-soundofskyrimcomplete.esp
-JKs_Skyrim_No_Lights_Patch.esp
-LoS II - JKs Skyrim patch.esp
-RLO - Exteriors.esp
-Immersive Encounters.esp
-SkyTEST-RealisticAnimals&Predators.esp
-Hothtrooper44_ArmorCompilation.esp
-Hothtrooper44_Armor_Ecksstra.esp
-Immersive Weapons.esp
-Immersive Music.esp
-EEKs Noble Whiterun Door.esp
-Vivid WeathersSE.esp
-Wildcat - Combat of Skyrim.esp
-Skyrim Revamped - Complete Enemy Overhaul.esp
-DBM_IW_Patch.esp
-Immersive Patrols II.esp
-3DNPC1.esp
-3DNPC0.esp
-AcquisitiveSoulGemMultithreaded.esp
-JKs Skyrim - Fishing patch.esp
-DBM_JKSkyrim_Patch.esp
-ForgottenCity.esp
-LoS II - LotD patch.esp
-JKs Skyrim_RWT_Patch.esp
-LoS II - SMIM patch.esp
-LoS II - USSEP patch.esp
-Apocalypse - Magic of Skyrim.esp
-Apothecary.esp
-run for your lives.esp
-Bears of the North.esp
-dD - Enhanced Blood Main.esp
-dD - Realistic Ragdoll Force - Realistic.esp
-DiverseDragonsCollectionSE.esp
-Footprints.esp
-icepenguinworldmapclassic.esp
-RUSTIC SOUL GEMS - Unsorted.esp
-DBM_SRCEO_Patch.esp
-DBM_Falskaar_Patch.esp
-DBM_IA_Patch.esp
-DBM_ForgottenCity_Patch.esp
-DBM_SkyTEST_Patch.esp
-DBM_SMIM_Patch.esp
-DBM_ISC_Patch.esp
 LegacyoftheDragonborn0.esp
-EBT - IC PATCH.esp
-LoS II - Sounds of Skyrim patch.esp
-Vivid Weathers SE - Falskaar.esp
-SoS_VividWeathers_Patch.esp
-MLU.esp
 CollegeOfWinterholdImmersive.esp
-DBM_MorrowlootUltimate_Patch.esp
-ZIA_Complete Pack.esp
-DBM_ZimsThaneWeapons_Patch.esp
-DBM_ZimsImmersiveArtifacts_Patch.esp
-DBM_ImmersiveCollegeofWinterhold_Patch.esp
-Ordinator - Perks of Skyrim.esp
-CWIOrdinatorPatchSSE.esp
-RealisticWaterTwo.esp
-RealisticWaterTwo - Falskaar.esp
-RealisticWaterTwo - Waves - Falskaar.esp
-RLO - Interiors.esp
-SoS_RLOInteriors_Patch.esp
-EmbersHD - RLO Patch.esp
-RLO - Illuminated Spells.esp
+JKs Skyrim.esp
+JK's Castle Volkihar.esp
+JK's Fort Dawnguard.esp
+soundsofskyrimcomplete.esp
+JK's Dark Brotherhood Sanctuary.esp
+JK's Understone Keep.esp
+JK's Raven Rock.esp
+JK's The Bards College.esp
+JK's Markarth Outskirts.esp
+JK's Whiterun's Outskirts.esp
+JK's Castle Dour.esp
+JK's High Hrothgar.esp
+JK's Solitude Outskirts.esp
+JK's Thieves Guild.esp
+JK's The Winking Skeever.esp
+JK's Temple of the Divines.esp
+JK's Sky Haven Temple.esp
+JK's Windhelm's Outskirts.esp
+JK's Arnleif and Sons Trading Company.esp
+JK's Jorrvaskr.esp
+JK's Mistveil Keep.esp
+JK's Haelga's Bunkhouse.esp
+JK's Temple of Mara.esp
+JK's Nightingale Hall.esp
+JK's Palace of the Kings.esp
+JK's Temple of Dibella.esp
+JK's The Hag's Cure.esp
+JK's Sinderion's Field Laboratory.esp
+JK's Dragonsreach.esp
+Snazzy Interiors - JKs Dragonsreach.esp
+JK's Silver-Blood Inn.esp
+JK's Elgrims Elixirs.esp
+Immersive Music.esp
+JK's Bee and Barb.esp
+JK's The Pawned Prawn.esp
+JK's New Gnisis Cornerclub.esp
+JK's Radiant Raiment.esp
+JK's Riverwood Trader.esp
+JK's The Bannered Mare.esp
+JK's White Phial.esp
+JK's Sleeping Giant Inn.esp
+JK's Angelines Aromatics.esp
+JK's Temple of Talos.esp
+JK's Candlehearth Hall.esp
+JK's The Ragged Flagon.esp
+JK's Septimus Signus's Outpost.esp
+Skyrim Flora Overhaul.esp
+JK's Belethor's General Goods.esp
+JK's Bits and Pieces.esp
+JK's Warmaiden's.esp
+JK's Arcadia's Cauldron.esp
+EEKs Noble Whiterun Door.esp
+JKs Skyrim - Fishing patch.esp
+Regional Sounds Expansion.esp
+Reverb Interior Sounds Expansion.esp
+AcousticTemplateFixes.esp
+JK's Sadris Used Wares.esp
+JK's Temple of Kynareth.esp
+RUSTIC SOULGEMS - Unsorted.esp
+JKs Drunken Huntsman - USSEP Patch.esp
+JKs Arcadias Cauldron - USSEP Patch.esp
+JKs Bits and Pieces - USSEP Patch.esp
+JKs Angelines Aromatics - USSEP Patch.esp
+BA_BardSongs_AIO.esp
+BA_BardSongs_Drums.esp
+BA_BardSongs_Flute.esp
+BA_BardSongs_Lute.esp
+JKs Palace of the Kings - USSEP Patch.esp
+ForgottenCity.esp
+JKs Whiterun Outskirts - USSEP Patch.esp
+JKs Castle Volkihar - LOTD patch.esp
+JKs Solitude Outskirts - CC Fishing patch.esp
+JKs Solitude Outskirts - LOTD patch.esp
+JKs Solitude Outskirts - SMIM patch.esp
+JKs High Hrothgar - LOTD Patch.esp
+JKs Solitude Outskirts - JKs Skyrim patch.esp
+JKs Ragged Flagon - USSEP Patch.esp
+JKs Understone Keep - USSEP patch.esp
+JKs Temple of Talos - USSEP patch.esp
+JKs Temple of the Divines - LOTD patch.esp
+JKs Temple of the Divines - USSEP Patch.esp
+JKs Winking Skeever - USSEP Patch.esp
+JKs Jorrvaskr - Sounds of Skyrim patch.esp
+JKs Jorrvaskr - LOTD patch.esp
+JKs Septimus Signus Outpost - LOTD Patch.esp
+JKs Sinderions Field Laboratory - LOTD patch.esp
+JKs Sinderions Field Laboratory - CC - Fishing patch.esp
+JKs Arnleif and Sons - LOTD Patch.esp
+JKs Arnleif and Sons - Sounds of Skyrim patch.esp
+JKs Bards College - Sounds of Skyrim patch.esp
+JKs Bards College - USSEP patch.esp
+JKs Castle Dour - LOTD patch.esp
+JKs Castle Dour - Sounds of Skyrim patch.esp
+AcousticTemplateFixes_ReverbInteriorSounds.esp
+JKs Whiterun Outskirts - CC Fishing patch.esp
+JKs Solitude Outskirts - Sounds of Skyrim patch.esp
+JKs Pawned Prawn - LOTD Patch.esp
+JKs Markarth Outskirts - LotD patch.esp
+JKs Sky Haven Temple - USSEP Patch.esp
+JKs Solitude Outskirts - USSEP patch.esp
+JKs Windhelm Outskirts - USSEP patch.esp
+JKs Sky Haven Temple - LOTD Patch.esp
+JKs Winking Skeever - Fishing Patch.esp
+JKs Bits and Pieces - LOTD Patch.esp
+JKs Sadris Used Wares - LOTD Patch.esp
+JKs Bards College - LOTD patch.esp
+JKs Dark Brotherhood Sanctuary - LOTD patch.esp
+JKs Dark Brotherhood Sanctuary - USSEP patch.esp
+JKs Dark Brotherhood Sanctuary - Sounds of Skyrim patch.esp
+JKs Silver-Blood Inn - LOTD Patch.esp
+JKs Markarth Outskirts - CC Fishing patch.esp
+JKs Blue Palace - Sounds of Skyrim patch.esp
+JKs Thieves Guild - Sounds of Skyrim patch.esp
+JKs Thieves Guild - USSEP patch.esp
+JKs Raven Rock - LotD patch.esp
+JKs Raven Rock - USSEP patch.esp
+JKs Raven Rock - CC Fishing patch.esp
 Modern Brawl Bug Fix.esp

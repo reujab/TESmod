@@ -4,6 +4,7 @@ if is_enabled 0100; then
 fi
 if is_enabled 1006; then
 	cp -al *Sounds\ of\ Skyrim* "$game_data"
+	rm "$game_data/JKs Jorrvaskr - Sounds of Skyrim - "{ELE,Lux}" patch.esp"
 fi
 if is_enabled 3002; then
 	cp -al *LOTD* "$game_data"
