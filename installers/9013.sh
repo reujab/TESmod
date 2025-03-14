@@ -1,8 +1,22 @@
 # JK's Interior Patch Collection
-if grep '^0100' "$enabled" > /dev/null; then
-	cp -al *USSEP* "$game_data"
+if [[ -f $game_data/ccBGSSSE001-Fish.esm ]]; then
+	cp -al "JKs Winking Skeever - Fishing Patch.esp" "JKs Sinderions Field Laboratory - CC - Fishing patch.esp" "$game_data"
 fi
-if grep '^3002' "$enabled" > /dev/null; then
+if is_enabled 0100; then
+	cp -al *-\ USSEP* "$game_data"
+fi
+if is_enabled 1006; then
+	cp -al *Sounds\ of\ Skyrim* "$game_data"
+fi
+if is_enabled 3002; then
 	cp -al *LOTD* "$game_data"
+	rm "$game_data/JKs Blue Palace - JKs Skyrim - LOTD - Solitude Skyway Patch.esp"
+	rm "$game_data/JKs Blue Palace - Solitude Skyway - LOTD Patch.esp"
+	rm "$game_data/JKs Blue Palace - Enhanced Solitude - LOTD Patch.esp"
+	rm "$game_data/JKs Blue Palace - Enhanced Solitude - Solitude Skyway - LOTD Patch.esp"
+	# Crashing (2025-03)
+	rm "$game_data/JKs Blue Palace - JKs Skyrim - LOTD Patch.esp"
 fi
-# TODO: AI Overhaul, Rugnarok, Sounds of Skyrim, 3DNPC, Embers XD
+rm -rf "$game_data"/JKs\ College*
+
+# TODO: AI Overhaul, Rugnarok, 3DNPC, Embers XD

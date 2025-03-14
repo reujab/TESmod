@@ -87,12 +87,13 @@ set_nexus_key() {
 	nexus_key=$(zenity --title="Nexus Mods API Key" --text="A browser window should have opened. Please scroll to the bottom of the page, request an API key, and paste it here." --entry) || true
 	if [[ -z $nexus_key ]]; then
 		cancel set_nexus_key
+		return
 	fi
 	echo "$nexus_key" > "$config/nexus_key.txt"
 }
 
 main_menu() {
-	enabled_mod_count=$(wc -l < "$enabled")
+	enabled_mods_count=$(wc -l < "$enabled")
 	action=$(
 		zenity --title="Choose action" --height=750 --list --radiolist --column= --column= --column= --hide-column=2 \
 			FALSE patches "1) Configure patches" \
@@ -103,7 +104,7 @@ main_menu() {
 			FALSE additions "6) Configure additions" \
 			FALSE tweaks "7) Configure tweaks" \
 			FALSE enb "8) Configure ENB/Weather" \
-			TRUE install "Install $enabled_mod_count mods" \
+			TRUE install "Install $enabled_mods_count mods" \
 			FALSE update "Update mods" \
 			FALSE revert "Revert to vanilla" \
 			FALSE play "Play (Steam)"
@@ -139,6 +140,10 @@ main_menu() {
 	main_menu
 }
 
+is_enabled() {
+	grep "^$1" "$enabled" > /dev/null
+}
+
 configure() {
 	local cmd unselected_ids=() first_time=1 line id default mod_name download link selected_ids unselected_ids dependants=() dependant_id
 	cmd=(zenity --title="Select mods" --height=512 --width=896 --list --checklist --column= --column= --column= --column= --hide-column=2 --editable --separator=" ")
@@ -160,7 +165,7 @@ configure() {
 		if [[ $download != http* ]]; then
 			link=https://www.nexusmods.com/$nexus_game/mods/$(cut -d: -f1 <<< "$download")
 		fi
-		if [[ $first_time = 1 && $default = 1 ]] || grep "^$id" "$enabled" > /dev/null; then
+		if [[ $first_time = 1 && $default = 1 ]] || is_enabled "$id"; then
 			cmd+=(TRUE)
 		else
 			cmd+=(FALSE)
@@ -183,7 +188,7 @@ configure() {
 	for id in "${unselected_ids[@]}"; do
 		while read -r line; do
 			dependant_id=$(cut -d, -f1 <<< "$line")
-			if ! grep "^$dependant_id" "$enabled" > /dev/null; then
+			if ! is_enabled "$dependant_id"; then
 				continue
 			fi
 			mod_name=$(cut -d, -f3 <<< "$line")
@@ -290,10 +295,13 @@ handle_nxm_link() {
 clean_mod_data() {
 	local dir bad_name
 	pushd "$1" > /dev/null
-	if [[ $(ls | wc -l) = 1 && -n $(echo */{00*,fomod,*.{bsa,esp},{m,M}eshes,{m,M}usic,{s,S}cripts,skse,SKSE,{s,S}ound,{t,T}extures}) ]]; then
+	if [[ $(ls | wc -l) = 1 && -n $(echo */{00*,fomod,*.{bsa,esp},{d,D}ata,{m,M}eshes,{m,M}usic,{s,S}cripts,skse,SKSE,{s,S}ound,{t,T}extures}) ]]; then
 		dir=$(echo *)
 		mv -- */* .
 		rmdir "$dir"
+		popd > /dev/null
+		clean_mod_data "$@"
+		return
 	fi
 	for dir in [0-9]*/; do
 		clean_mod_data "$dir"
