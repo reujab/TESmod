@@ -1,9 +1,16 @@
 # Legacy of the Dragonborn Patches
+# TODO: Zim's Immersive Artifacts, Morrowloot Ultimate, Requiem, SRCEO, SkyTEST
 if is_enabled 1004; then
 	cp -al 06\ ISC/* "$game_data"
 fi
 if is_enabled 2002; then
 	cp -al 06zzSMIM/* "$game_data"
+fi
+if is_enabled 2091; then
+	cp -al 06\ JSDaggers/* "$game_data"
+fi
+if is_enabled 2092; then
+	cp -al 06\ JSRings/* "$game_data"
 fi
 if is_enabled 3004; then
 	cp -al 04\ FCP/* "$game_data"
@@ -41,4 +48,3 @@ fi
 if is_enabled 4016; then
 	cp -al 06zzRCI/* "$game_data"
 fi
-# TODO: Zim's Immersive Artifacts, Morrowloot Ultimate, Requiem, JSDaggers, JSRings, SRCEO, SkyTEST

@@ -122,6 +122,9 @@ main_menu() {
 		content)
 			configure '^3'
 			;;
+		retextures)
+			configure '^4'
+			;;
 		install)
 			install
 			;;
@@ -295,7 +298,7 @@ handle_nxm_link() {
 clean_mod_data() {
 	local dir bad_name
 	pushd "$1" > /dev/null
-	if [[ $(ls | wc -l) = 1 && -n $(echo */{00*,fomod,*.{bsa,esp},{d,D}ata,{m,M}eshes,{m,M}usic,{s,S}cripts,skse,SKSE,{s,S}ound,{t,T}extures}) ]]; then
+	if [[ $(ls | wc -l) = 1 && -n $(echo */{00*,fomod,FOMod,*.{bsa,esp},{d,D}ata,{m,M}eshes,{m,M}usic,{s,S}cripts,skse,SKSE,{s,S}ound,{t,T}extures}) ]]; then
 		dir=$(echo *)
 		mv -- */* .
 		rmdir "$dir"

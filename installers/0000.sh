@@ -1,5 +1,6 @@
 # SKSE
-cp -al skse64*/* "$game_dir"
+cp -al *.{dll,exe} "$game_dir"
+cp -al Scripts "$game_data"
 if [[ ! -f $game_dir/SkyrimSELauncher.vanilla.exe ]]; then
 	mv "$game_dir/SkyrimSELauncher"{,.vanilla}.exe
 fi

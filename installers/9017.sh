@@ -1,4 +1,5 @@
 # JK's Raven Rock Patch Collection
+# TODO: AI Overhaul
 if [[ -f $game_data/ccBGSSSE001-Fish.esm ]]; then
 	cp -al *Fishing* "$game_data"
 fi
@@ -8,4 +9,3 @@ fi
 if is_enabled 3002; then
 	cp -al *LotD* "$game_data"
 fi
-# TODO: AI Overhaul

@@ -1,93 +1,26 @@
-ccASVSSE001-ALMSIVI.esm
 ccBGSSSE001-Fish.esm
-ccBGSSSE002-ExoticArrows.esl
-ccBGSSSE003-Zombies.esl
-ccBGSSSE004-RuinsEdge.esl
-ccBGSSSE005-Goldbrand.esl
-ccBGSSSE006-StendarsHammer.esl
-ccBGSSSE007-Chrysamere.esl
-ccBGSSSE010-PetDwarvenArmoredMudcrab.esl
-ccBGSSSE011-HrsArmrElvn.esl
-ccBGSSSE012-HrsArmrStl.esl
-ccBGSSSE014-SpellPack01.esl
-ccBGSSSE019-StaffofSheogorath.esl
-ccBGSSSE020-GrayCowl.esl
-ccBGSSSE021-LordsMail.esl
-ccMTYSSE001-KnightsoftheNine.esl
 ccQDRSSE001-SurvivalMode.esl
-ccTWBSSE001-PuzzleDungeon.esm
-ccEEJSSE001-Hstead.esm
-ccQDRSSE002-Firewood.esl
-ccBGSSSE018-Shadowrend.esl
-ccBGSSSE035-PetNHound.esl
-ccFSVSSE001-Backpacks.esl
-ccEEJSSE002-Tower.esl
-ccEDHSSE001-NorJewel.esl
-ccVSVSSE002-Pets.esl
-ccBGSSSE037-Curios.esl
-ccBGSSSE034-MntUni.esl
-ccBGSSSE045-Hasedoki.esl
-ccBGSSSE008-Wraithguard.esl
-ccBGSSSE036-PetBWolf.esl
-ccFFBSSE001-ImperialDragon.esl
-ccMTYSSE002-VE.esl
-ccBGSSSE043-CrossElv.esl
-ccVSVSSE001-Winter.esl
-ccEEJSSE003-Hollow.esl
-ccBGSSSE016-Umbra.esm
-ccBGSSSE031-AdvCyrus.esm
-ccBGSSSE038-BowofShadows.esl
-ccBGSSSE040-AdvObGobs.esl
-ccBGSSSE050-BA_Daedric.esl
-ccBGSSSE052-BA_Iron.esl
-ccBGSSSE054-BA_Orcish.esl
-ccBGSSSE058-BA_Steel.esl
-ccBGSSSE059-BA_Dragonplate.esl
-ccBGSSSE061-BA_Dwarven.esl
-ccPEWSSE002-ArmsOfChaos.esl
-ccBGSSSE041-NetchLeather.esl
-ccEDHSSE002-SplKntSet.esl
-ccBGSSSE064-BA_Elven.esl
-ccBGSSSE063-BA_Ebony.esl
-ccBGSSSE062-BA_DwarvenMail.esl
-ccBGSSSE060-BA_Dragonscale.esl
-ccBGSSSE056-BA_Silver.esl
-ccBGSSSE055-BA_OrcishScaled.esl
-ccBGSSSE053-BA_Leather.esl
-ccBGSSSE051-BA_DaedricMail.esl
-ccBGSSSE057-BA_Stalhrim.esl
-ccBGSSSE066-Staves.esl
-ccBGSSSE067-DaedInv.esm
-ccBGSSSE068-Bloodfall.esl
-ccBGSSSE069-Contest.esl
-ccVSVSSE003-NecroArts.esl
-ccVSVSSE004-BeAFarmer.esl
 ccBGSSSE025-AdvDSGS.esm
-ccFFBSSE002-CrossbowPack.esl
-ccBGSSSE013-Dawnfang.esl
-ccRMSSSE001-NecroHouse.esl
-ccEDHSSE003-Redguard.esl
-ccEEJSSE004-Hall.esl
-ccEEJSSE005-Cave.esm
-ccKRTSSE001_Altar.esl
-ccCBHSSE001-Gaunt.esl
-ccAFDSSE001-DweSanctuary.esm
+ccBGSSSE037-Curios.esl
 _ResourcePack.esl
-
 unofficial skyrim special edition patch.esp
 UHDAP - MusicHQ.esp
 LegacyoftheDragonborn.esm
 JK's Blue Palace.esp
+RealisticWaterTwo - Resources.esm
+Falskaar.esm
 JKs The Drunken Huntsman.esp
+Embers XD.esm
 SkyUI_SE.esp
 SMIM-SE-Merged-All.esp
 Audio Overhaul Skyrim.esp
 Immersive Sounds - Compendium.esp
 AOS_ISC_Integration.esp
 LegacyoftheDragonborn0.esp
+JK's Castle Volkihar.esp
+Book Covers Skyrim.esp
 CollegeOfWinterholdImmersive.esp
 JKs Skyrim.esp
-JK's Castle Volkihar.esp
 JK's Fort Dawnguard.esp
 soundsofskyrimcomplete.esp
 JK's Dark Brotherhood Sanctuary.esp
@@ -96,6 +29,7 @@ JK's Raven Rock.esp
 JK's The Bards College.esp
 JK's Markarth Outskirts.esp
 JK's Whiterun's Outskirts.esp
+Embers XD.esp
 JK's Castle Dour.esp
 JK's High Hrothgar.esp
 JK's Solitude Outskirts.esp
@@ -154,14 +88,24 @@ BA_BardSongs_Drums.esp
 BA_BardSongs_Flute.esp
 BA_BardSongs_Lute.esp
 JKs Palace of the Kings - USSEP Patch.esp
+DBM_JKSkyrim_Patch.esp
 ForgottenCity.esp
 JKs Whiterun Outskirts - USSEP Patch.esp
+DBM_ISC_Patch.esp
+JS Unique Utopia SE - Rings - Johnskyrim.esp
+DBM_JSRings_Patch.esp
+DBM_ImmersiveCollegeofWinterhold_Patch.esp
 JKs Castle Volkihar - LOTD patch.esp
 JKs Solitude Outskirts - CC Fishing patch.esp
+Embers XD - Patch - JKs Skyrim.esp
+JKs Skyrim_RWT_Patch.esp
 JKs Solitude Outskirts - LOTD patch.esp
 JKs Solitude Outskirts - SMIM patch.esp
+JKs Blue Palace - Sounds of Skyrim patch.esp
+DBM_JKBluePalace_Patch.esp
 JKs High Hrothgar - LOTD Patch.esp
 JKs Solitude Outskirts - JKs Skyrim patch.esp
+JKs Ragged Flagon - Embers XD Patch.esp
 JKs Ragged Flagon - USSEP Patch.esp
 JKs Understone Keep - USSEP patch.esp
 JKs Temple of Talos - USSEP patch.esp
@@ -195,12 +139,52 @@ JKs Bards College - LOTD patch.esp
 JKs Dark Brotherhood Sanctuary - LOTD patch.esp
 JKs Dark Brotherhood Sanctuary - USSEP patch.esp
 JKs Dark Brotherhood Sanctuary - Sounds of Skyrim patch.esp
+JKs Silver-Blood Inn - Embers XD Patch.esp
 JKs Silver-Blood Inn - LOTD Patch.esp
 JKs Markarth Outskirts - CC Fishing patch.esp
-JKs Blue Palace - Sounds of Skyrim patch.esp
 JKs Thieves Guild - Sounds of Skyrim patch.esp
 JKs Thieves Guild - USSEP patch.esp
 JKs Raven Rock - LotD patch.esp
 JKs Raven Rock - USSEP patch.esp
 JKs Raven Rock - CC Fishing patch.esp
+DBM_Falskaar_Patch.esp
+DBM_ForgottenCity_Patch.esp
+DBM_JKArcadia_Patch.esp
+DBM_JKBannered_Patch.esp
+DBM_JKBelethor_Patch.esp
+Embers XD - Patch - JKs Dragonsreach.esp
+DBM_JKDragonsreach_Patch.esp
+DBM_JKDrunken_Patch.esp
+DBM_JKWarmaidens_Patch.esp
+DBM_SMIM_Patch.esp
+dD - Enhanced Blood Main.esp
+ISC Enhanced Blood Patch.esp
+icepenguinworldmapclassic.esp
+Bears of the North.esp
+JS Instruments of Skyrim SE - Uniques.esp
+JS Barenziah SE - Johnskyrim.esp
+JKs Mistveil Keep - Embers XD Patch.esp
+JKs Elgrims Elixirs - Embers XD Patch.esp
+JKs Pawned Prawn - Embers XD Patch.esp
+JKs Sleeping Giant Inn - Embers XD Patch.esp
+JKs White Phial - Embers XD Patch.esp
+JKs Candlehearth Hall - Embers XD Patch.esp
+JKs Hags Cure - Embers XD Patch.esp
+JKs Jorrvaskr - Bears of the North patch.esp
+JKs High Hrothgar - Embers XD patch.esp
+JKs Bee and Barb - Embers XD Patch.esp
+JS Unique Utopia SE - Daggers - Johnskyrim.esp
+JKs Palace of the Kings - Embers XD Patch.esp
+Embers XD - Patch - Survival Mode.esp
+Embers XD - Patch - Legacy of the Dragonborn.esp
+Embers XD - Fire Magick Add-On.esp
+JKs Understone Keep - Embers XD Patch.esp
+JKs Castle Volkihar - Embers XD patch.esp
+JS Dwarven Oil SE.esp
+DBM_RuinsClutterImproved_Patch.esp
+DBM_JSDagger_Patch.esp
+JS Vanilla Circlets SE.esp
+RealisticWaterTwo.esp
+RealisticWaterTwo - Falskaar.esp
+RealisticWaterTwo - Waves - Falskaar.esp
 Modern Brawl Bug Fix.esp
