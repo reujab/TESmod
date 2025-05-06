@@ -1,10 +1,12 @@
 ID,Default,Name,Version,Download,Dependencies,Description
+,,00xx - Libraries,,,,
 0000,0,SKSE,2.2.6,https://skse.silverlock.org/beta/skse64_2_02_06.7z,,
 0001,0,SSE Engine Fixes Part 2,2020.3,17230:181171,,
 0010,0,Address Library,11,32444:470707,,
 0011,0,FileAccess Interface,1.4.1,13956:319211,0000,
 0012,0,PapyrusUtil,4.6,13048:462773,0000:0010,
 0013,0,Sound Record Distributor,1.5.1,77815:473053,0000:0010,
+,,01xx - Bug fixes,,,,
 0100,1,Unofficial Skyrim Special Edition Patch,4.3.4a,266:598358,,
 0101,1,SSE Engine Fixes,6.2,17230:489502,0000:0001:0010,
 0102,1,Bug Fixes SSE,10,33261:368384,0000:0010,
@@ -22,7 +24,7 @@ ID,Default,Name,Version,Download,Dependencies,Description
 1018,1,Bad Ass Bard Songs,1.3,47202:213912,,Adds 100 new variations of bard songs
 2002,1,Static Mesh Improvement Mod,2.08,659:59069,2003,Improves the appearance of 3D models
 2003,2,Static Mesh Improvement Mod - Quality Addon,1.5,44388:445248,2002,
-2004,1,Noble Skyrim - 2K,5.5.0,21423:73168,,
+2004,1,Noble Skyrim - 2K,5.5.0,21423:73168,,Texture pack (5 GB)
 2006,1,Flora Overhaul,2.74a,2154:561312,,
 2020,0,Skyrim 202X,10.5,2347,2021:2022:2023:2024:2025:2026:2027:2028:2029,Photorealistic texture pack (25 GB)
 2021,2,Skyrim 202X - Architecture,10.0.1,2347:480708,2008,
@@ -34,7 +36,7 @@ ID,Default,Name,Version,Download,Dependencies,Description
 2027,2,Skyrim 202X - Parallax Meshes - Riften Ground,10.0,2347:480425,2008,
 2028,2,Skyrim 202X - Parallax Meshes - Whiterun,10.0,2347:269051,2008,
 2029,2,Skyrim 202X Complex Terrain Parallax,1.5,54860:338096,2008,
-2040,1,Rustic Collection - 2K,,4703,2041:2042:2043:2044:2045:2046:2047:2048:2049:2050:2051:2052:2053:2054:2055:2056:2057:2058:2059,Quality retextures of various items
+2040,1,Rustic Collection - 2K,,4703,2041:2042:2043:2044:2045:2046:2047:2048:2049:2050:2051:2052:2053:2054:2055:2056:2057:2058:2059,Quality retextures of various items (5 GB)
 2041,2,Rustic Amulets,2.0,35485:144580,2040,
 2042,2,Rustic Animated Potions and Poisons - 2K,1.1,2276:2981,2040,
 2043,2,Rustic Armor and Weapons - 2K,3.0,19666:69261,2040,
@@ -145,9 +147,24 @@ ID,Default,Name,Version,Download,Dependencies,Description
 4020,1,Ethereal Clouds SE - 2K,3.0,2393:166494,,
 4022,1,HD Road Signs - 2K,1.1,2454:3821,,
 4024,1,Enhanced Blood Textures,4.0,2357:249235,0000,
+5002,1,Immersive Creatures,7.0.2,12680:227169,0000:0011:0199,Adds dozens of new creatures
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
 9000,,ISC Enhanced Blood Textures Patch,3.72,2951:4512,1002:4024,
 9001,,ISC Immersive Armors Patch,3.0,2951:221876,1002:TODO,
-9002,,ISC Morrowloot Patch,4.0,2951:4515,1002:TODO,
 9003,,ISC Mysticism Patch,1.1.6,2951:207412,1002:TODO,
 9004,,Audio Overhaul - Immersive Sounds Integration,1.1.0,36761:280412,1002:1004,
 9005,,Legacy of the Dragonborn Patches,6.8.0,30980:593351,3002,
@@ -168,3 +185,10 @@ ID,Default,Name,Version,Download,Dependencies,Description
 9020,,JK's Windhelm Outskirts Patch Collection,1.5.1,87964:580532,3092,
 9021,,JK's Skyrim - Pets of Skyrim Patch,1.0,24229:85590,3008,
 9022,,Bears of the North Patches,1.2.4,48148:519721,4004:SkyTEST-TODO,
+9023,,Immersive Creatures - Nixhound CC Patch,7,54930:225465,5002,
+9024,,Immersive Creatures - Saints and Seducers CC Patch,7,54930:225466,5002,
+9025,,Immersive Creatures - Immersive Sounds Patch,3.0,54930:236452,5002:1004,
+9026,,Immersive Creatures - MorrowLoot Ultimate Patch,1.57,54930:236992,5002:TODO,
+9027,,Immersive Creatures - Complete Enemy Overhaul Patch,2.3,54930:235423,5002:TODO,
+9028,,Immersive Creatures - SkyTEST Patch,1.65.02,54930:228161,5002:TODO,
+,,,,,,

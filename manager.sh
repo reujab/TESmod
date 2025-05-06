@@ -61,7 +61,7 @@ set_game_dir() {
 				sed 's/"//g'
 		)
 	fi
-	if [[ -f $config/skyrim_dir.txt ]]; then
+	if [[ -s $config/skyrim_dir.txt ]]; then
 		game_dir=$(cat "$config/skyrim_dir.txt")
 	else
 		game_dir=$(zenity --title="Choose the Skyrim installation directory" --file-selection --directory) || true
@@ -76,6 +76,29 @@ set_game_dir() {
 		return
 	fi
 	echo "$game_dir" > "$config/skyrim_dir.txt"
+}
+
+set_game_docs() {
+	game_data="$game_dir/Data"
+	game_docs=$(readlink -f "$game_dir/../../compatdata/489830/pfx/drive_c/users/steamuser/Documents/My Games/Skyrim Special Edition")
+	if [[ -f $game_docs/Skyrim.ini ]]; then
+		return
+	fi
+	if [[ -s $config/config_dir.txt ]]; then
+		game_docs=$(cat "$config/config_dir.txt")
+	else
+		game_docs=$(zenity --title="Choose the Skyrim config directory (Documents/My Games/Skyrim Special Edition)" --file-selection --directory)
+	fi
+	if [[ -z $game_docs ]]; then
+		cancel set_game_docs
+		return
+	fi
+	if [[ -f $game_docs/Skyrim.ini ]]; then
+		echo "$game_docs" > "$config/config_dir.txt"
+		return
+	fi
+	zenity --text="Bad config directory (missing Skyrim.ini): $game_dir" --error
+	set_game_docs
 }
 
 set_nexus_key() {
@@ -353,7 +376,6 @@ install() {
 		echo "Installing $id $name"
 		mod_data=$(get_mod_dir "$id")
 		if [[ ! -d $mod_data ]]; then continue; fi
-		game_data="$game_dir/Data"
 		if [[ -f installers/$id.sh ]]; then
 			installer=$(cat "installers/$id.sh")
 			pushd "$mod_data" > /dev/null
@@ -393,5 +415,6 @@ update() {
 }
 
 set_game_dir
+set_game_docs
 set_nexus_key
 main_menu
