@@ -347,7 +347,7 @@ clean_mod_data() {
 	mv SKSE/{plugins,Plugins} 2> /dev/null || true
 	mv sound Sound 2> /dev/null || true
 	mv textures Textures 2> /dev/null || true
-	for dir in Meshes Textures; do
+	for dir in Meshes Sound Textures; do
 		pushd "$dir" &> /dev/null || continue
 		while true; do
 			for bad_name in **/*[A-Z]*/; do

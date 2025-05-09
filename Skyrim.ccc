@@ -4,187 +4,84 @@ ccBGSSSE025-AdvDSGS.esm
 ccBGSSSE037-Curios.esl
 _ResourcePack.esl
 unofficial skyrim special edition patch.esp
-UHDAP - MusicHQ.esp
-LegacyoftheDragonborn.esm
-JK's Blue Palace.esp
-RealisticWaterTwo - Resources.esm
-Falskaar.esm
-JKs The Drunken Huntsman.esp
-Embers XD.esm
+ScriptFixesCompilation.esp
+Navigator-NavFixes.esl
+Vanilla Scripts Enhanced.esl
+SimplyOptimizedScripts.esl
+Landscape and Water Fixes.esp
+MoreDogAnims - SFX.esl
 SkyUI_SE.esp
-SMIM-SE-Merged-All.esp
+LSFX-SSE-Audiosettings.esp
 Audio Overhaul Skyrim.esp
-Immersive Sounds - Compendium.esp
-AOS_ISC_Integration.esp
-LegacyoftheDragonborn0.esp
-JK's Castle Volkihar.esp
-Book Covers Skyrim.esp
-CollegeOfWinterholdImmersive.esp
-JKs Skyrim.esp
-JK's Fort Dawnguard.esp
-soundsofskyrimcomplete.esp
-JK's Dark Brotherhood Sanctuary.esp
-JK's Understone Keep.esp
-JK's Raven Rock.esp
-JK's The Bards College.esp
-JK's Markarth Outskirts.esp
-JK's Whiterun's Outskirts.esp
-Embers XD.esp
-JK's Castle Dour.esp
-JK's High Hrothgar.esp
-JK's Solitude Outskirts.esp
-JK's Thieves Guild.esp
-JK's The Winking Skeever.esp
-JK's Temple of the Divines.esp
-JK's Sky Haven Temple.esp
-JK's Windhelm's Outskirts.esp
-JK's Arnleif and Sons Trading Company.esp
-JK's Jorrvaskr.esp
-JK's Mistveil Keep.esp
-JK's Haelga's Bunkhouse.esp
-JK's Temple of Mara.esp
-JK's Nightingale Hall.esp
-JK's Palace of the Kings.esp
-JK's Temple of Dibella.esp
-JK's The Hag's Cure.esp
-JK's Sinderion's Field Laboratory.esp
-JK's Dragonsreach.esp
-Snazzy Interiors - JKs Dragonsreach.esp
-JK's Silver-Blood Inn.esp
-JK's Elgrims Elixirs.esp
-Immersive Music.esp
-JK's Bee and Barb.esp
-JK's The Pawned Prawn.esp
-JK's New Gnisis Cornerclub.esp
-JK's Radiant Raiment.esp
-JK's Riverwood Trader.esp
-JK's The Bannered Mare.esp
-JK's White Phial.esp
-JK's Sleeping Giant Inn.esp
-JK's Angelines Aromatics.esp
-JK's Temple of Talos.esp
-JK's Candlehearth Hall.esp
-JK's The Ragged Flagon.esp
-JK's Septimus Signus's Outpost.esp
-Skyrim Flora Overhaul.esp
-JK's Belethor's General Goods.esp
-JK's Bits and Pieces.esp
-JK's Warmaiden's.esp
-JK's Arcadia's Cauldron.esp
-EEKs Noble Whiterun Door.esp
-JKs Skyrim - Fishing patch.esp
-Regional Sounds Expansion.esp
+SMIM-SE-Merged-All.esp
+NoGrassias Ultimate.esp
+Lit Road Signs.esp
+moretodo.esp
+Finding_Derkeethus.esp
+fixLOD.esp
+Enchantments Cost Formula Fix.esp
+Proving Honor Companions Quest Progression Fix.esp
+allowProgressBugFix.esp
+College of Winterhold Quest Start Fixes.esp
+NARC SE for Vanilla.esp
 Reverb Interior Sounds Expansion.esp
 AcousticTemplateFixes.esp
-JK's Sadris Used Wares.esp
-JK's Temple of Kynareth.esp
-RUSTIC SOULGEMS - Unsorted.esp
-JKs Drunken Huntsman - USSEP Patch.esp
-JKs Arcadias Cauldron - USSEP Patch.esp
-JKs Bits and Pieces - USSEP Patch.esp
-JKs Angelines Aromatics - USSEP Patch.esp
+moretosayfalkreath.esp
+moretosayrorikstead.esp
+moretosaywhiterun.esp
+moretosayriverwood.esp
+moretosayshorsstone.esp
+Alduin Bane Fix.esp
+WhirlwindSprintVoiceWorkaround.esp
+Unaggressive Dragon Priests Fix.esp
+zeroBountyHostilityFix.esp
+HorseFix.esp
+Next-Gen Decapitations.esp
+SimpleFireWyrmFix.esp
+SkyrimReputation_SSE.esp
+priestsgrantblessings.esp
 BA_BardSongs_AIO.esp
-BA_BardSongs_Drums.esp
-BA_BardSongs_Flute.esp
-BA_BardSongs_Lute.esp
-JKs Palace of the Kings - USSEP Patch.esp
-DBM_JKSkyrim_Patch.esp
-ForgottenCity.esp
-JKs Whiterun Outskirts - USSEP Patch.esp
-DBM_ISC_Patch.esp
-JS Unique Utopia SE - Rings - Johnskyrim.esp
-DBM_JSRings_Patch.esp
-DBM_ImmersiveCollegeofWinterhold_Patch.esp
-JKs Castle Volkihar - LOTD patch.esp
-JKs Solitude Outskirts - CC Fishing patch.esp
-Embers XD - Patch - JKs Skyrim.esp
-JKs Skyrim_RWT_Patch.esp
-JKs Solitude Outskirts - LOTD patch.esp
-JKs Solitude Outskirts - SMIM patch.esp
-JKs Blue Palace - Sounds of Skyrim patch.esp
-DBM_JKBluePalace_Patch.esp
-JKs High Hrothgar - LOTD Patch.esp
-JKs Solitude Outskirts - JKs Skyrim patch.esp
-JKs Ragged Flagon - Embers XD Patch.esp
-JKs Ragged Flagon - USSEP Patch.esp
-JKs Understone Keep - USSEP patch.esp
-JKs Temple of Talos - USSEP patch.esp
-JKs Temple of the Divines - LOTD patch.esp
-JKs Temple of the Divines - USSEP Patch.esp
-JKs Winking Skeever - USSEP Patch.esp
-JKs Jorrvaskr - Sounds of Skyrim patch.esp
-JKs Jorrvaskr - LOTD patch.esp
-JKs Septimus Signus Outpost - LOTD Patch.esp
-JKs Sinderions Field Laboratory - LOTD patch.esp
-JKs Sinderions Field Laboratory - CC - Fishing patch.esp
-JKs Arnleif and Sons - LOTD Patch.esp
-JKs Arnleif and Sons - Sounds of Skyrim patch.esp
-JKs Bards College - Sounds of Skyrim patch.esp
-JKs Bards College - USSEP patch.esp
-JKs Castle Dour - LOTD patch.esp
-JKs Castle Dour - Sounds of Skyrim patch.esp
+secretofrorikstead.esp
+moretosaykarthwasten.esp
+Guard Dialogue Overhaul.esp
+moretosaycityguards.esp
+moretosayriften.esp
+mtsfollowerbanter.esp
+moretosaywinterhold.esp
+moretosaygeneric.esp
+guardencounters.esp
+Reverb Interior Sounds Expansion_VolumeSlider_Rain.esp
+Reverb Interior Sounds Expansion_VolumeSlider_Thunder.esp
 AcousticTemplateFixes_ReverbInteriorSounds.esp
-JKs Whiterun Outskirts - CC Fishing patch.esp
-JKs Solitude Outskirts - Sounds of Skyrim patch.esp
-JKs Pawned Prawn - LOTD Patch.esp
-JKs Markarth Outskirts - LotD patch.esp
-JKs Sky Haven Temple - USSEP Patch.esp
-JKs Solitude Outskirts - USSEP patch.esp
-JKs Windhelm Outskirts - USSEP patch.esp
-JKs Sky Haven Temple - LOTD Patch.esp
-JKs Winking Skeever - Fishing Patch.esp
-JKs Bits and Pieces - LOTD Patch.esp
-JKs Sadris Used Wares - LOTD Patch.esp
-JKs Bards College - LOTD patch.esp
-JKs Dark Brotherhood Sanctuary - LOTD patch.esp
-JKs Dark Brotherhood Sanctuary - USSEP patch.esp
-JKs Dark Brotherhood Sanctuary - Sounds of Skyrim patch.esp
-JKs Silver-Blood Inn - Embers XD Patch.esp
-JKs Silver-Blood Inn - LOTD Patch.esp
-JKs Markarth Outskirts - CC Fishing patch.esp
-JKs Thieves Guild - Sounds of Skyrim patch.esp
-JKs Thieves Guild - USSEP patch.esp
-JKs Raven Rock - LotD patch.esp
-JKs Raven Rock - USSEP patch.esp
-JKs Raven Rock - CC Fishing patch.esp
-DBM_Falskaar_Patch.esp
-DBM_ForgottenCity_Patch.esp
-DBM_JKArcadia_Patch.esp
-DBM_JKBannered_Patch.esp
-DBM_JKBelethor_Patch.esp
-Embers XD - Patch - JKs Dragonsreach.esp
-DBM_JKDragonsreach_Patch.esp
-DBM_JKDrunken_Patch.esp
-DBM_JKWarmaidens_Patch.esp
-DBM_SMIM_Patch.esp
-dD - Enhanced Blood Main.esp
-ISC Enhanced Blood Patch.esp
-icepenguinworldmapclassic.esp
-Bears of the North.esp
+CarriageAndStableDialogues.esp
+mihailtalkativedragonpriests.esp
+Vampire Lines Expansion.esp
+Vampire Lines Expansion - Orc Addon.esp
+Brawl Lines Expansion.esp
+SnoresOfSkyrim.esp
+mihailtalkativehagravens.esp
+Northerner Diaries in Skyrim.esp
+Forsworn and Thalmor Lines Expansion.esp
+Bandit Lines Expansion.esp
+Echolocating Falmer.esp
+Falmer Servant Lines Expansion.esp
+Civil War Lines Expansion.esp
+NPCs React To Invisibility.esp
+Chapter II - Soundtrack mod by Dreyma Music.esp
+Collision Dialogue Overhaul.esp
+Extended Guard Dialogue.esp
+Shouts of Stallholders.esp
+NPCs React To Necromancy.esp
+Extended Bandit Dialogue.esp
+RUSTIC SOULGEMS - Unsorted.esp
+aMidianBorn_Book of Silence.esp
 JS Instruments of Skyrim SE - Uniques.esp
 JS Barenziah SE - Johnskyrim.esp
-JKs Mistveil Keep - Embers XD Patch.esp
-JKs Elgrims Elixirs - Embers XD Patch.esp
-JKs Pawned Prawn - Embers XD Patch.esp
-JKs Sleeping Giant Inn - Embers XD Patch.esp
-JKs White Phial - Embers XD Patch.esp
-JKs Candlehearth Hall - Embers XD Patch.esp
-JKs Hags Cure - Embers XD Patch.esp
-JKs Jorrvaskr - Bears of the North patch.esp
-JKs High Hrothgar - Embers XD patch.esp
-JKs Bee and Barb - Embers XD Patch.esp
 JS Unique Utopia SE - Daggers - Johnskyrim.esp
-JKs Palace of the Kings - Embers XD Patch.esp
-Embers XD - Patch - Survival Mode.esp
-Embers XD - Patch - Legacy of the Dragonborn.esp
-Embers XD - Fire Magick Add-On.esp
-JKs Understone Keep - Embers XD Patch.esp
-JKs Castle Volkihar - Embers XD patch.esp
+Precision.esp
+Conditional Expressions.esp
+JS Unique Utopia SE - Rings - Johnskyrim.esp
+AnimatedFilledSoulGems.esp
 JS Dwarven Oil SE.esp
-DBM_RuinsClutterImproved_Patch.esp
-DBM_JSDagger_Patch.esp
 JS Vanilla Circlets SE.esp
-RealisticWaterTwo.esp
-RealisticWaterTwo - Falskaar.esp
-RealisticWaterTwo - Waves - Falskaar.esp
-Modern Brawl Bug Fix.esp
+CraftingAnimations.esp
