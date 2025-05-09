@@ -1,4 +1,4 @@
-#!/bin/bash -eu
+#!/bin/bash -eux
 set -o pipefail
 shopt -s globstar nullglob
 
@@ -340,14 +340,16 @@ clean_mod_data() {
 		rmdir Data
 	fi
 	mv FOMod fomod 2> /dev/null || true
+	mv interface Interface 2> /dev/null || true
 	mv meshes Meshes 2> /dev/null || true
 	mv music Music 2> /dev/null || true
 	mv scripts Scripts 2> /dev/null || true
+	mv SEQ Seq 2> /dev/null || true
 	mv skse SKSE 2> /dev/null || true
 	mv SKSE/{plugins,Plugins} 2> /dev/null || true
 	mv sound Sound 2> /dev/null || true
 	mv textures Textures 2> /dev/null || true
-	for dir in Meshes Sound Textures; do
+	for dir in Interface Meshes Sound Textures; do
 		pushd "$dir" &> /dev/null || continue
 		while true; do
 			for bad_name in **/*[A-Z]*/; do
