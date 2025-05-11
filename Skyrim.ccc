@@ -6,16 +6,21 @@ _ResourcePack.esl
 unofficial skyrim special edition patch.esp
 ScriptFixesCompilation.esp
 Navigator-NavFixes.esl
+RSkyrimChildren.esm
 Vanilla Scripts Enhanced.esl
 SimplyOptimizedScripts.esl
 Landscape and Water Fixes.esp
 MoreDogAnims - SFX.esl
+PraedysSkeletons.esl
+Dismembering Framework.esm
+Expressive Facegen Morphs.esl
 LSFX-SSE-Audiosettings.esp
 Audio Overhaul Skyrim.esp
 SMIM-SE-Merged-All.esp
 NoGrassias Ultimate.esp
 Lit Road Signs.esp
 moretodo.esp
+mihaildmgskel_.esp
 Finding_Derkeethus.esp
 fixLOD.esp
 Enchantments Cost Formula Fix.esp
@@ -26,6 +31,8 @@ NARC SE for Vanilla.esp
 Reverb Interior Sounds Expansion.esp
 AcousticTemplateFixes.esp
 moretosayfalkreath.esp
+WormpleHagravens.esp
+mihailhawkreplacer.esp
 moretosayrorikstead.esp
 moretosaywhiterun.esp
 moretosayriverwood.esp
@@ -35,7 +42,6 @@ WhirlwindSprintVoiceWorkaround.esp
 Unaggressive Dragon Priests Fix.esp
 zeroBountyHostilityFix.esp
 HorseFix.esp
-Next-Gen Decapitations.esp
 SimpleFireWyrmFix.esp
 SkyrimReputation_SSE.esp
 priestsgrantblessings.esp
@@ -91,3 +97,24 @@ dD - Enhanced Blood Main.esp
 AOS_EBT Patch.esp
 TemperedRacialTextures.esp
 Dirt and Blood - Dynamic Visuals.esp
+Savage Wolves - Fox Fix.esp
+Nordic Faces - FaceGeom.esp
+Nordic Faces - FaceTint.esp
+Nordic Faces - FaceTint0.esp
+RSChildren.esp
+NewDogsReplacers.esp
+New Guard Recruits.esp
+Skyrim Snow Dogs.esp
+DapperDeliveries_CourierOverhaul.esp
+zz_HorseOverhaul.esp
+Damaged Skeletons - Levelled Lists - compatiblity version.esp
+UniqueDragonPriests_XB.esp
+Additional Dremora Faces.esp
+Dremora Lines Expansion.esp
+RaceMenu.esp
+RaceMenuPlugin.esp
+Beards.esp
+NPCsReactToFrenzy.esp
+ResplendentRoyals.esp
+HDT-SMP Vanilla.esp
+DVA - Dynamic Vampire Appearance.esp
